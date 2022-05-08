@@ -134,7 +134,7 @@ For the bonus experimensts, we analyzed two different aspects that were similar 
 
 ## Chest Tumor Classification Experiment
 
-For this experiment, the files necessary include the chest tumor dataset (unzipped) as well as the image_processing_and_classification_chest_tumor.py script. To run this experiment, simply run the python file likeso: "python3 image_processing_and_classification_chest_tumor.py" to see both the KNN baseline and the performance of the 3 models utilized at identifying the type of tumor that exists within the scan. The results of two runs of the KNN baseline and a single run of the models can be shown below:
+For this experiment, the files necessary include the chest tumor dataset (unzipped) as well as the classification_chest_tumor.py script. To run this experiment, simply run the python file likeso: "python3 classification_chest_tumor.py" to see both the KNN baseline and the performance of the 3 models utilized at identifying the type of tumor that exists within the scan. The results of two runs of the KNN baseline and a single run of the models can be shown below:
   
 ### KNN Baseline Accuracy (2 runs, averaged):
 68.98%
@@ -156,7 +156,7 @@ For this experiment, the files necessary include the chest tumor dataset (unzipp
   
 ## Alzheimer's Classification Experiment
   
-For this experiment, the files necessary include the Alzheimer's dataset (unzipped) as well as the image_processing_and_classification_brain_diseases.py script. To run this experiment, simply run the python file likeso: "python3 image_processing_and_classification_brain_diseases.py" to see both the KNN baseline and the performance of the 3 models utilized at identifying the level of dementia that exists within the scan. The results of two runs of the KNN baseline and a single run of the models can be shown below:
+For this experiment, the files necessary include the Alzheimer's dataset (unzipped) as well as the classification_brain_diseases.py script. To run this experiment, simply run the python file likeso: "python3 classification_brain_diseases.py" to see both the KNN baseline and the performance of the 3 models utilized at identifying the level of dementia that exists within the scan. The results of two runs of the KNN baseline and a single run of the models can be shown below:
   
 ### KNN Baseline Accuracy (2 runs, averaged):
 46.81%

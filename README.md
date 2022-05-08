@@ -20,6 +20,10 @@ Binary Classification Dataset: https://www.kaggle.com/datasets/preetviradiya/bri
 
 Multiclass Classification Dataset: https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset
 
+Chest Tumor Dataset (Bonus): https://www.kaggle.com/datasets/mohamedhanyyy/chest-ctscan-images
+
+Alternative Brain Disease Dataset (Alzheimer's, Bonus): https://www.kaggle.com/datasets/yasserhessein/dataset-alzheimer?select=Alzheimer_s+Dataset
+
 # Tasks
 
 For these tasks, we wanted to compare different state of the art convolutional neural network architectures and determine the factors most important to accurately classify a brain tumor provided an image. The different models we wanted to compare include:

@@ -53,7 +53,7 @@ The tasks we have explored are as follows:
 
 # Binary Classification Experiment
 
-Files for this experiment includes the binary classification dataset (unzipped) as well as the binary_classification.py. To run this experiment, simply run the python file likeso: "python3 binary_classification.py". This will run the experiment and print out the results for each of the 3 models utilized. The results of a single run of this experiment can be shown below:
+Files for this experiment includes the binary classification dataset (unzipped) as well as the binary_classification_experiment.py. To run this experiment, simply run the python file likeso: "python3 binary_classification_experiment.py". This will run the experiment and print out the results for each of the 3 models utilized. The results of a single run of this experiment can be shown below:
 
 ## Table 1: Binary Classification Experiment Results (1 run)
 | Model | Size | Time to train | Validation Acc | Test Acc | F1-Score
@@ -66,7 +66,7 @@ As we can see, with a slightly bigger architecture, ResNet18 is able to achieve 
 
 # Multiclass Classification Experiment
 
-Similar to the previous experiment, the files necessary includes the multiclass classification dataset (unzipped) as well as the multiclass_classification.py. To run this experiment, simply run the python file likeso: "python3 multiclass_classification.py". This will run the experiment and print out the results for each of the 3 models utilized. The results of 5 runs of this experiment (averaged) can be shown below:
+Similar to the previous experiment, the files necessary includes the multiclass classification dataset (unzipped) as well as the multi_classification_experiment.py. To run this experiment, simply run the python file likeso: "python3 multi_classification_experiment.py". This will run the experiment and print out the results for each of the 3 models utilized. The results of 5 runs of this experiment (averaged) can be shown below:
 
 ## Table 2: Multiclass Classification Experiment Results (5 runs, averaged)
 | Model | Size | Time to train | Validation Acc | Test Acc | F1-Score
@@ -79,7 +79,7 @@ As we can see, ResNet18 again achieves the highest performance, with VGG11 comin
 
 # KNN Baseline Experiment
 
-The K-Nearest Neighbors algorithm was used as a non-deep learning baseline for our Binary Classification experiment. However, the sheer size of the dataset and each data point required both dimensionality reduction using PCA and use of a random 15% of our data for training and testing. The code for this experiment was included in binary_classification.py. The same instructions to run that file are applied to this experiment. The accuracy across 10 runs of this experiment (averaged) as well as the confusion matrix of our best run are shown below:
+The K-Nearest Neighbors algorithm was used as a non-deep learning baseline for our Binary Classification experiment. However, the sheer size of the dataset and each data point required both dimensionality reduction using PCA and use of a random 15% of our data for training and testing. The code for this experiment was included in binary_classification_experiment.py. The same instructions to run that file are applied to this experiment. The accuracy across 10 runs of this experiment (averaged) as well as the confusion matrix of our best run are shown below:
 
 ## Binary Classification KNN Baseline Results
 
@@ -104,7 +104,7 @@ Thomas, please fill this out
 
 ## Amount of training data
 
-For this experiment, the files necessary includes the multiclass classification dataset (unzipped) as well as the multiclass_classification.py, multiclass_classification_50.py and multiclass_classification_20.py. To run this experiment, simply run the python file likeso: "python3 multiclass_classification_20.py" to see the experiment results with only 20% of the training data. The results of using 100% of training data can be found in [Table 2](#table-2-multiclass-classification-experiment-results-5-runs-averaged), while the results for using 50% and 20% of training data can be shown below. These percentages were randomly sampled from the original training data. 
+For this experiment, the files necessary includes the multiclass classification dataset (unzipped) as well as the multi_classification_experiment.py, multi_classification_experiment_50.py and multi_classification_experiment_20.py. To run this experiment, simply run the python file likeso: "python3 multi_classification_experiment_20.py" to see the experiment results with only 20% of the training data. The results of using 100% of training data can be found in [Table 2](#table-2-multiclass-classification-experiment-results-5-runs-averaged), while the results for using 50% and 20% of training data can be shown below. These percentages were randomly sampled from the original training data. 
 
 ## Table 4: Multiclass Classification Experiment 50% of training data results (1 run)
 

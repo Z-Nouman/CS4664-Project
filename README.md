@@ -22,7 +22,7 @@ Multiclass Classification Dataset: https://www.kaggle.com/datasets/masoudnickpar
 
 Chest Tumor Dataset (Bonus): https://www.kaggle.com/datasets/mohamedhanyyy/chest-ctscan-images
 
-Alternative Brain Disease Dataset (Alzheimer's, Bonus): https://www.kaggle.com/datasets/yasserhessein/dataset-alzheimer?select=Alzheimer_s+Dataset
+Alternative Brain Disease Dataset (Alzheimer's, Bonus): https://www.kaggle.com/datasets/yasserhessein/dataset-alzheimer
 
 # Tasks
 

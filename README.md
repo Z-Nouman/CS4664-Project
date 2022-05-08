@@ -17,6 +17,7 @@ Ishan, please add a description of this project, similar to the intros you did f
 The datasets we used we obtained through Kaggle. These files should be in the same directory as our code and unzipped prior to running any experiments. 
 
 Binary Classification Dataset: https://www.kaggle.com/datasets/preetviradiya/brian-tumor-dataset
+
 Multiclass Classification Dataset: https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset
 
 # Tasks
@@ -68,6 +69,15 @@ Thomas, please fill this out
 ## Amount of training data
 
 For this experiment, the files necessary includes the multiclass classification dataset (unzipped) as well as the multiclass_classification.py, multiclass_classification_50.py and multiclass_classification_20.py. To run this experiment, simply run the python file likeso: "python3 multiclass_classification_20.py" to see the experiment results with only 20% of the training data. The results of these experiments after a single run can be shown below: 
+
+Using 100% of training data:
+![image](https://user-images.githubusercontent.com/52423718/167283383-b81adf31-0cad-4bd8-8065-75b1deba9296.png)
+
+Using 50% of training data:
+
+<Insert experiment results here>
+  
+Using 20% of training data:
 
 <Insert experiment results here>
 

@@ -42,6 +42,7 @@ The tasks we have explored are as follows:
 
 Files for this experiment includes the binary classification dataset (unzipped) as well as the binary_classification.py. To run this experiment, simply run the python file likeso: "python3 binary_classification.py". This will run the experiment and print out the results for each of the 3 models utilized. The results of a single run of this experiment can be shown below:
 
+Figure 1: Binary Classification Experiment Results (1 run)
 ![image](https://user-images.githubusercontent.com/52423718/167283221-6f597af4-6a86-4653-ac6b-b52e3bdaf52a.png)
 
 As we can see, with a slightly bigger architecture, ResNet18 is able to achieve the highest performance, with VGG11 coming in as a close second. One theory our group had after running this experiment is that ResNet18 is able to learn the features necessary to classify a brain tumor image better than GoogleNet with it's larger architecture. However, VGG11 has too large of an architecture and learns unimportant features, causing it to come in second place. 
@@ -50,6 +51,7 @@ As we can see, with a slightly bigger architecture, ResNet18 is able to achieve 
 
 Similar to the previous experiment, the files necessary includes the multiclass classification dataset (unzipped) as well as the multiclass_classification.py. To run this experiment, simply run the python file likeso: "python3 multiclass_classification.py". This will run the experiment and print out the results for each of the 3 models utilized. The results of 5 runs of this experiment (averaged) can be shown below:
 
+Figure 2: Multiclass Classification Experiment Results (5 runs, averaged)
 ![image](https://user-images.githubusercontent.com/52423718/167283383-b81adf31-0cad-4bd8-8065-75b1deba9296.png)
 
 As we can see, ResNet18 again achieves the highest performance, with VGG11 coming in second and GoogleNet coming in last again. 
@@ -70,14 +72,14 @@ Thomas, please fill this out
 
 For this experiment, the files necessary includes the multiclass classification dataset (unzipped) as well as the multiclass_classification.py, multiclass_classification_50.py and multiclass_classification_20.py. To run this experiment, simply run the python file likeso: "python3 multiclass_classification_20.py" to see the experiment results with only 20% of the training data. The results of these experiments after a single run can be shown below: 
 
-Using 100% of training data:
+Figure 3: Multiclass Classification Experiment 100% of training data results (1 run)
 ![image](https://user-images.githubusercontent.com/52423718/167283383-b81adf31-0cad-4bd8-8065-75b1deba9296.png)
 
-Using 50% of training data:
+Figure 4: Multiclass Classification Experiment 50% of training data results (1 run)
 
 <Insert experiment results here>
   
-Using 20% of training data:
+Figure 5: Multiclass Classification Experiment 20% of training data results (1 run)
 
 <Insert experiment results here>
 

@@ -77,7 +77,8 @@ The K-Nearest Neighbors algorithm was used as a non-machine learning baseline fo
 82.03%
 
 ### Table 3: Confusion Matrix (best run)
-|              | Predicted Tumor | Predicted No Tumor |
+| | Predicted Tumor | Predicted No Tumor |
+| --- | --- | --- |
 | Actual Tumor | 129 | 29 |
 | Actual No Tumor | 35 | 167 |
 
@@ -119,7 +120,8 @@ For this experiment, the files necessary include the chest tumor dataset (unzipp
 68.98%
 
 ### Table 6: Confusion Matrix (best run)
-|              | Predicted No Tumor | Predicted Adenocarcinoma | Predicted Large Cell Carcinoma | Predicted Squamous Cell Carcinoma |
+| | Predicted No Tumor | Predicted Adenocarcinoma | Predicted Large Cell Carcinoma | Predicted Squamous Cell Carcinoma |
+| --- | --- | --- | --- | --- |
 | Actual No Tumor | 14 | 2 | 1 | 0 |
 | Actual Adenocarcinoma | 2 | 130 | 11 | 33 |
 | Actual Large Cell Carcinoma | 1 | 16 | 42 | 8 |
@@ -140,8 +142,9 @@ For this experiment, the files necessary include the Alzheimer's dataset (unzipp
 46.81%
 
 ### Table 8: Confusion Matrix (best run)
-|              | Predicted No Dementia | Predicted Very Mild Dementia | Predicted Mild Dementia | Predicted Moderate Dementia |
-| Actual No Dementia | 101 | 64 | 28 | 0 |
+| | Predicted No Dementia | Predicted Very Mild Dementia | Predicted Mild Dementia | Predicted Moderate Dementia |
+| --- | --- | --- | --- | --- |
+  | Actual No Dementia | 101 | 64 | 28 | 0 |
 | Actual Very Mild Dementia | 28 | 52 | 33 | 0 |
 | Actual Mild Dementia | 10 | 24 | 19 | 0 |
 | Actual Moderate Dementia | 0 | 1 | 0 | 0 |

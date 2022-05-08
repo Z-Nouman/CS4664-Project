@@ -125,7 +125,7 @@ For this experiment, the files necessary include the chest tumor dataset (unzipp
 | Actual Large Cell Carcinoma | 1 | 16 | 42 | 8 |
 | Actual Squamous Cell Carcinoma | 0 | 32 | 1 | 81 |
 
-## Table 7: Chest Tumor Classification Experiment Results (1 run)
+### Table 7: Chest Tumor Classification Experiment Results (1 run)
 | Model | Size | Time to train | Validation Acc | Test Acc | F1-Score
 | --- | --- | --- | --- | --- | --- |
 | ResNet18 | 11 million params | ? min | ?% | ?% | ? |
@@ -146,7 +146,7 @@ For this experiment, the files necessary include the Alzheimer's dataset (unzipp
 | Actual Mild Dementia | 10 | 24 | 19 | 0 |
 | Actual Moderate Dementia | 0 | 1 | 0 | 0 |
 
-## Table 9: Dementia Severity Classification Experiment Results (1 run)
+### Table 9: Dementia Severity Classification Experiment Results (1 run)
 | Model | Size | Time to train | Validation Acc | Test Acc | F1-Score
 | --- | --- | --- | --- | --- | --- |
 | ResNet18 | 11 million params | ? min | ?% | ?% | ? |

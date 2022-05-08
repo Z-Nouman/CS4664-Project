@@ -104,15 +104,25 @@ Thomas, please fill this out
 
 ## Amount of training data
 
-For this experiment, the files necessary includes the multiclass classification dataset (unzipped) as well as the multiclass_classification.py, multiclass_classification_50.py and multiclass_classification_20.py. To run this experiment, simply run the python file likeso: "python3 multiclass_classification_20.py" to see the experiment results with only 20% of the training data. The results of using 100% of training data can be found in [Table 2](#table-2-multiclass-classification-experiment-results-5-runs-averaged), while the results for using 50% and 20% of training data can be shown below: 
+For this experiment, the files necessary includes the multiclass classification dataset (unzipped) as well as the multiclass_classification.py, multiclass_classification_50.py and multiclass_classification_20.py. To run this experiment, simply run the python file likeso: "python3 multiclass_classification_20.py" to see the experiment results with only 20% of the training data. The results of using 100% of training data can be found in [Table 2](#table-2-multiclass-classification-experiment-results-5-runs-averaged), while the results for using 50% and 20% of training data can be shown below. These percentages were randomly sampled from the original training data. 
 
 ## Table 4: Multiclass Classification Experiment 50% of training data results (1 run)
 
-<Insert experiment results here>
+| Model | Size | Time to train | Validation Acc | Test Acc | F1-Score
+| --- | --- | --- | --- | --- | --- |
+| ResNet18 | 11 million params | 20.5 min | 92.02% | 92.03% | 0.9206 |
+| GoogleNet | 7 million params | 32.5 min | 89.74% | 89.47% | 0.8946 |
+| VGG11 | 133 million params | 71 min | 91.45% | 90.80% | 0.9087 |
   
 ## Table 5: Multiclass Classification Experiment 20% of training data results (1 run)
 
-<Insert experiment results here>
+| Model | Size | Time to train | Validation Acc | Test Acc | F1-Score
+| --- | --- | --- | --- | --- | --- |
+| ResNet18 | 11 million params | 8.5 min | 87.75% | 87.57% | 0.8732 |
+| GoogleNet | 7 million params | 14 min | 83.48% | 87.00% | 0.8690 |
+| VGG11 | 133 million params | 30 min | 86.61% | 87.95% | 0.8778 |
+
+As seen in Table 4, ResNet18 remains the best model at classifying the dataset, even given only 50% of the original training data, with VGG11 again coming in as second place. However, things change when given only 20% of the original training data, as seen in Table 5. This shows that VGG11 is able to achieve a higher performance when there is very little training data. While these results are not statistically significant due to the low number of trials, we can still observe that GoogleNet remains strongly in last place when compared to the other two models, which perform similarly. 
 
 # Interpretability Experiment
 

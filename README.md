@@ -79,7 +79,7 @@ As we can see, ResNet18 again achieves the highest performance, with VGG11 comin
 
 # KNN Baseline Experiment
 
-The K-Nearest Neighbors algorithm was used as a non-deep learning baseline for our Binary Classification experiment. However, the sheer size of the dataset and each data point required both dimensionality reduction using PCA and use of a random 15% of our data for training and testing. The code for this experiment was included in binary_classification_experiment.py. The same instructions to run that file are applied to this experiment. The accuracy across 10 runs of this experiment (averaged) as well as the confusion matrix of our best run are shown below:
+The K-Nearest Neighbors algorithm was used as a non-deep learning baseline for our Binary Classification experiment. However, the sheer size of the dataset and each data point required both dimensionality reduction using PCA and use of a random 15% of our data for training and testing. The code for this experiment was included in binary_classification_knn.py. To run this experiment, simply run the python file likeso: "python3 binary_classification_knn.py". The accuracy across 10 runs of this experiment (averaged) as well as the confusion matrix of our best run are shown below:
 
 ## Binary Classification KNN Baseline Results
 

@@ -70,7 +70,18 @@ As we can see, ResNet18 again achieves the highest performance, with VGG11 comin
 
 # KNN Baseline Experiment
 
-Ishan, please fill this out
+The K-Nearest Neighbors algorithm was used as a non-machine learning baseline for our Binary Classification experiment. However, the sheer size of the dataset and each data point required both dimensionality reduction using PCA and use of a random 15% of our data for training and testing. The code for this experiment was included in binary_classification.py. The same instructions to run that file are applied to this experiment. The accuracy across 10 runs of this experiment (averaged) as well as the confusion matrix of our best run are shown below:
+## Binary Classification KNN Baseline Results
+
+### Accuracy (10 runs, averaged):
+82.03%
+
+### Table 3: Confusion Matrix (best run)
+|              | Predicted Tumor | Predicted No Tumor |
+| Actual Tumor | 129 | 29 |
+| Actual No Tumor | 35 | 167 |
+
+The highest accuracy came when the number of components for PCA was 128 and there were 5 neighbors (82.22%).
 
 # Hyperparameter Tuning Experiment
 
@@ -84,11 +95,11 @@ Thomas, please fill this out
 
 For this experiment, the files necessary includes the multiclass classification dataset (unzipped) as well as the multiclass_classification.py, multiclass_classification_50.py and multiclass_classification_20.py. To run this experiment, simply run the python file likeso: "python3 multiclass_classification_20.py" to see the experiment results with only 20% of the training data. The results of using 100% of training data can be found in [Table 2](#table-2-multiclass-classification-experiment-results-5-runs-averaged), while the results for using 50% and 20% of training data can be shown below: 
 
-Table 3: Multiclass Classification Experiment 50% of training data results (1 run)
+## Table 4: Multiclass Classification Experiment 50% of training data results (1 run)
 
 <Insert experiment results here>
   
-Table 4: Multiclass Classification Experiment 20% of training data results (1 run)
+## Table 5: Multiclass Classification Experiment 20% of training data results (1 run)
 
 <Insert experiment results here>
 
@@ -98,7 +109,49 @@ Thomas, please fill this out
 
 # Bonus Experiments
 
-Ishan, please fill this out
+For the bonus experimensts, we analyzed two different aspects that were similar in nature to our brain tumor experiments. Classification of tumors, but in other parts of the body, and diseases of the brain other than tumors. Given the scarcity of easily accessible, clean data online that were not related to brain tumors, we focused on just chest tumors for the tumor classification bonus experiment and Alzheimer's/Dementia for the brain disease bonus experiment. Additionally, due to the uneven distribution across data classes, we believed that multi-class classification would yield a more accurate result than binary classification.
+
+## Chest Tumor Classification Experiment
+
+For this experiment, the files necessary include the chest tumor dataset (unzipped) as well as the image_processing_and_classification_chest_tumor.py script. To run this experiment, simply run the python file likeso: "python3 image_processing_and_classification_chest_tumor.py" to see both the KNN baseline and the performance of the 3 models utilized at identifying the type of tumor that exists within the scan. The results of two runs of the KNN baseline and a single run of the models can be shown below:
+  
+### KNN Baseline Accuracy (2 runs, averaged):
+68.98%
+
+### Table 6: Confusion Matrix (best run)
+|              | Predicted No Tumor | Predicted Adenocarcinoma | Predicted Large Cell Carcinoma | Predicted Squamous Cell Carcinoma |
+| Actual No Tumor | 14 | 2 | 1 | 0 |
+| Actual Adenocarcinoma | 2 | 130 | 11 | 33 |
+| Actual Large Cell Carcinoma | 1 | 16 | 42 | 8 |
+| Actual Squamous Cell Carcinoma | 0 | 32 | 1 | 81 |
+
+## Table 7: Chest Tumor Classification Experiment Results (1 run)
+| Model | Size | Time to train | Validation Acc | Test Acc | F1-Score
+| --- | --- | --- | --- | --- | --- |
+| ResNet18 | 11 million params | ? min | ?% | ?% | ? |
+| GoogleNet | 7 million params | ? min | ?% | ?% | ? |
+| VGG11 | 133 million params | ? min | ?% | ?% | ? |
+  
+## Alzheimer's Classification Experiment
+  
+For this experiment, the files necessary include the Alzheimer's dataset (unzipped) as well as the image_processing_and_classification_brain_diseases.py script. To run this experiment, simply run the python file likeso: "python3 image_processing_and_classification_brain_diseases.py" to see both the KNN baseline and the performance of the 3 models utilized at identifying the level of dementia that exists within the scan. The results of two runs of the KNN baseline and a single run of the models can be shown below:
+  
+### KNN Baseline Accuracy (2 runs, averaged):
+46.81%
+
+### Table 8: Confusion Matrix (best run)
+|              | Predicted No Dementia | Predicted Very Mild Dementia | Predicted Mild Dementia | Predicted Moderate Dementia |
+| Actual No Dementia | 101 | 64 | 28 | 0 |
+| Actual Very Mild Dementia | 28 | 52 | 33 | 0 |
+| Actual Mild Dementia | 10 | 24 | 19 | 0 |
+| Actual Moderate Dementia | 0 | 1 | 0 | 0 |
+
+## Table 9: Dementia Severity Classification Experiment Results (1 run)
+| Model | Size | Time to train | Validation Acc | Test Acc | F1-Score
+| --- | --- | --- | --- | --- | --- |
+| ResNet18 | 11 million params | ? min | ?% | ?% | ? |
+| GoogleNet | 7 million params | ? min | ?% | ?% | ? |
+| VGG11 | 133 million params | ? min | ?% | ?% | ? |
 
 # Conclusion
 

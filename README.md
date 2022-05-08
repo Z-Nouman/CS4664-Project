@@ -10,7 +10,16 @@ All experiments were run on either glogin at Virginia Tech or through Google Col
 
 # Introduction
 
-Ishan, please add a description of this project, similar to the intros you did for the presentations in class
+Roughly 18,000 Americans die annually from [brain tumors](https://www.cancer.net/cancer-types/brain-tumor/statistics). In order to give patients a higher chance at survival, early diagnosis is key to ensuring more effective treatment. However, brain tumor diagnosis is comparatively far more challenging than other tumors. Not only is it more difficult to spot, but it is also hard to access given the fragility of the brain.
+
+Diagnosing the tumor is also difficult because, while an initial MRI and CAT scan are done to determine the presence of a tumor, biopsies are often performed in order to determine the grade, which is the aggressiveness or severity of the tumor, as well as identify certain biomarkers in order to personalize the treatment.This is risky because the more times the brain is exposed to an invasive procedure, there is an increased chance for error and further damage could arise.
+
+A non-invasive approach is far safer, but it’s largely done manually by certified radiologists. Radiologists identifying tumors in scans is both laborious and time-consuming. While certain countries, like the US, are fortunate to have a suitable number of radiologists per person, other countries, [like England](https://www.theguardian.com/politics/2017/dec/31/lack-of-specialist-surgeons-putting-patients-at-risk), have a shortage of radiologists, which can cause delays in image interpretation that last for months, which can literally be a life-changing difference for patients.
+
+Classification of tumors can be an incredible asset for doctors, because it can not only provided a second opinion, but allow for a far more personalized treatment approach, not only for the type of tumor, but its location and severity. Without it, a patient is likely to get a generic treatment that might not be effective, lowering the chance of survival.
+
+As a result, people have turned to machine learning in recent years as a way to assist radiologists in identifying and classifying tumors in order to get people treatment faster. Given that the current state-of-the-art still has flaws, we were eager to get involved as well.
+
 
 # Dataset
 

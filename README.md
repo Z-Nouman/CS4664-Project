@@ -79,7 +79,7 @@ As we can see, ResNet18 again achieves the highest performance, with VGG11 comin
 
 # KNN Baseline Experiment
 
-The K-Nearest Neighbors algorithm was used as a non-deep learning baseline for our Binary Classification experiment. However, the sheer size of the dataset and each data point required both dimensionality reduction using PCA and use of a random 15% of our data for training and testing. The code for this experiment was included in binary_classification_experiment.py. The same instructions to run that file are applied to this experiment. The accuracy across 10 runs of this experiment (averaged) as well as the confusion matrix of our best run are shown below:
+The K-Nearest Neighbors algorithm was used as a non-deep learning baseline for our Binary Classification experiment. However, the sheer size of the dataset and each data point required both dimensionality reduction using PCA and use of a random 15% of our data for training and testing. The code for this experiment was included in binary_classification_knn.py. To run this experiment, simply run the python file likeso: "python3 binary_classification_knn.py". The accuracy across 10 runs of this experiment (averaged) as well as the confusion matrix of our best run are shown below:
 
 ## Binary Classification KNN Baseline Results
 
@@ -134,7 +134,7 @@ For the bonus experimensts, we analyzed two different aspects that were similar 
 
 ## Chest Tumor Classification Experiment
 
-For this experiment, the files necessary include the chest tumor dataset (unzipped) as well as the image_processing_and_classification_chest_tumor.py script. To run this experiment, simply run the python file likeso: "python3 image_processing_and_classification_chest_tumor.py" to see both the KNN baseline and the performance of the 3 models utilized at identifying the type of tumor that exists within the scan. The results of two runs of the KNN baseline and a single run of the models can be shown below:
+For this experiment, the files necessary include the chest tumor dataset (unzipped) as well as the classification_chest_tumor.py script. To run this experiment, simply run the python file likeso: "python3 classification_chest_tumor.py" to see the performance of the 3 models utilized at identifying the type of tumor that exists within the scan and run "python3 chest_tumor_knn.py" to see the KNN Baseline results. The results of two runs of the KNN baseline and a single run of the models can be shown below:
   
 ### KNN Baseline Accuracy (2 runs, averaged):
 68.98%
@@ -150,13 +150,15 @@ For this experiment, the files necessary include the chest tumor dataset (unzipp
 ### Table 7: Chest Tumor Classification Experiment Results (1 run)
 | Model | Size | Time to train | Validation Acc | Test Acc | F1-Score
 | --- | --- | --- | --- | --- | --- |
-| ResNet18 | 11 million params | ? min | ?% | ?% | ? |
-| GoogleNet | 7 million params | ? min | ?% | ?% | ? |
-| VGG11 | 133 million params | ? min | ?% | ?% | ? |
-  
+| ResNet18 | 11 million params | 8 min | 89.19% | 82.3% | 0.8197 |
+| GoogleNet | 7 million params | 13 min | 91.89% | 80.53% | 0.8028 |
+| VGG11 | 133 million params | 28 min | 89.19% | 82.3% | 0.8234 |
+
+As seen in Table 7, ResNet18 and VGG11 exhibit the exact same validation and test accuracies, with VGG11 getting the slight edge on F1-Score. This is surprising to see, given that VGG11 has a significantly longer training time and ten times the parameters. GoogleNet, like other trials, remains firmly in last place in testing accuracy, but did have a higher validation accuracy. 
+
 ## Alzheimer's Classification Experiment
   
-For this experiment, the files necessary include the Alzheimer's dataset (unzipped) as well as the image_processing_and_classification_brain_diseases.py script. To run this experiment, simply run the python file likeso: "python3 image_processing_and_classification_brain_diseases.py" to see both the KNN baseline and the performance of the 3 models utilized at identifying the level of dementia that exists within the scan. The results of two runs of the KNN baseline and a single run of the models can be shown below:
+For this experiment, the files necessary include the Alzheimer's dataset (unzipped) as well as the classification_brain_diseases.py script. To run this experiment, simply run the python file likeso: "python3 classification_brain_diseases.py" to see the performance of the 3 models utilized at identifying the level of dementia that exists within the scan and run "python3 brain_disease_knn.py" to see the KNN Baseline results. The results of two runs of the KNN baseline and a single run of the models can be shown below:
   
 ### KNN Baseline Accuracy (2 runs, averaged):
 46.81%

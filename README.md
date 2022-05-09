@@ -169,12 +169,16 @@ For this experiment, the files necessary include the Alzheimer's dataset (unzipp
 | Actual Mild Dementia | 10 | 24 | 19 | 0 |
 | Actual Moderate Dementia | 0 | 1 | 0 | 0 |
 
-### Table 9: Dementia Severity Classification Experiment Results (1 run)
+### Table 9: Dementia Severity Classification Experiment Results (1 run)*
 | Model | Size | Time to train | Validation Acc | Test Acc | F1-Score
 | --- | --- | --- | --- | --- | --- |
-| ResNet18 | 11 million params | ? min | ?% | ?% | ? |
-| GoogleNet | 7 million params | ? min | ?% | ?% | ? |
-| VGG11 | 133 million params | ? min | ?% | ?% | ? |
+| ResNet18 | 11 million params | 8.5 min | 67.5% | 67.71% | 0.6716 |
+| GoogleNet | 7 million params | 14.5 min | 66.56% | 65.31% | 0.6470 |
+| VGG11 | 133 million params | 35 min | 67.5% | 67.19% | 0.6629 |
+
+As seen in Table 9, ResNet18 gets the slight edge in test accuracy and F-score, like most of our other experiments. All models had diffculty with false negatives. It is not as consequentially has a false negative for brain tumor scans, but it is still interesting to note. ResNet had the fewest false negatives, another area in which it outperformed the other two models. VGG-11 followed closely in second and GoogleNet lagged behind the other two.
+
+*This experiment was run with a third of the epochs that previous multi-class classification experiments were ran with due to both time and memory constraints.
 
 # Conclusion
 

@@ -3,8 +3,6 @@
 
 PyTorch implementation of CNNs and transfer learning to classify brain tumor images for the CS 4664 course at Virginia Tech. 
 
-If you choose this option, your repo needs to have a well-written Readme file that explains, in plain English, what the repo is about and which notebooks in it show which experiments.
-
 # Environment
 All experiments were run on either glogin at Virginia Tech or through Google Colab. Many of the packages used in this project came preinstalled on these platforms, but some notable ones include: PyTorch and Torchvision; Numpy; Sklearn; Matplotlib; Pickle
 

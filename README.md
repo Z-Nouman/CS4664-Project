@@ -129,7 +129,7 @@ To better understand the our best performing binary classifier, a ResNet18 based
 
 # Bonus Experiments
 
-For the bonus experimensts, we analyzed two different aspects that were similar in nature to our brain tumor experiments. Classification of tumors, but in other parts of the body, and diseases of the brain other than tumors. Given the scarcity of easily accessible, clean data online that were not related to brain tumors, we focused on just chest tumors for the tumor classification bonus experiment and Alzheimer's/Dementia for the brain disease bonus experiment. Additionally, due to the uneven distribution across data classes, we believed that multi-class classification would yield a more accurate result than binary classification.
+For the bonus experiments, we analyzed two different aspects that were similar in nature to our brain tumor experiments. Classification of tumors, but in other parts of the body, and diseases of the brain other than tumors. Given the scarcity of easily accessible, clean data online that were not related to brain tumors, we focused on just chest tumors for the tumor classification bonus experiment and Alzheimer's/Dementia for the brain disease bonus experiment. Additionally, due to the uneven distribution across data classes, we believed that multi-class classification would yield a more accurate result than binary classification.
 
 ## Chest Tumor Classification Experiment
 

@@ -98,6 +98,7 @@ To perform an efficient search for better hyperparameters, we used python librar
 
 # Empirical Experiments
 
+## Loss w.r.t epochs 
 We have investigated the the loss of two models, ResNet18 and GoogleNet with respect to number of epochs trained. Both models showed a steep spike in loss around 4 epochs with significant diminishing returns after 7.
 
 ## Amount of training data

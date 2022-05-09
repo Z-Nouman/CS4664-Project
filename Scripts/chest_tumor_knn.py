@@ -81,12 +81,15 @@ def process_dataset(dataset_file_name, total_num_samples, label, storage_gray):
 
         all_grays.append((grey_temp, label))
 
+# Append all the images into a list with a label 0 if healthy, 1 if the patient has adenocarcinoma
+# 2 if the patient has large cell carcinoma, and 3 if the patient has squamous cell carcinoma
 all_grays = list()
 process_dataset('./ChestTumorDataSet/normal/*', 37, 0, all_grays)
 process_dataset('./ChestTumorDataSet/adenocarcinoma/*', 326, 1, all_grays)
 process_dataset('./ChestTumorDataSet/large.cell.carcinoma/*', 143, 2, all_grays)
 process_dataset('./ChestTumorDataSet/squamous.cell.carcinoma/*', 241, 3, all_grays)
 
+# With the data in tuple form, split them up into x and y
 gray_x = []
 
 for tup in all_grays:
@@ -97,6 +100,8 @@ gray_y = []
 for tup in all_grays:
 	gray_y.append(tup[1])
 
+#This splitting is done so that gray_x can be reshaped into an acceptable format for the KNN-algorithm
+#https://stackoverflow.com/questions/65671880/valueerror-found-array-with-dim-3-estimator-expected-2-python was used for help
 gray_x = np.array(gray_x)
 gray_y = np.array(gray_y)
 dimX1, dimX2, dimX3 = gray_x.shape
@@ -106,6 +111,7 @@ x_gray_train, x_gray_test, y_gray_train, y_gray_test = train_test_split(gray_x, 
 
 #It was unnecessary to just take 360 data points for both training and testing since the dataset was so small to begin with
 
+#Reduce the dimensions and fit the KNeighborsClassifier onto the training data
 from sklearn.decomposition import PCA
 pca = PCA(n_components=128)
 pca.fit(x_gray_train)
@@ -115,6 +121,7 @@ knn_model = KNeighborsClassifier(n_neighbors=6)
 knn_model.fit(x_gray_train, y_gray_train)
 gray_y_pred = knn_model.predict(x_gray_test)
 
+#Once the model is fit and makes predictions on the x_gray_test data, ouput the accuracy metrics
 from sklearn.metrics import accuracy_score
 from sklearn.metrics import classification_report
 from sklearn.metrics import confusion_matrix

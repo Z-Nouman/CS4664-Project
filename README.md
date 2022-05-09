@@ -94,11 +94,12 @@ The highest accuracy came when the number of components for PCA was 128 and ther
 
 # Hyperparameter Tuning Experiment
 
-Thomas, please fill this out 
+To perform an efficient search for better hyperparameters, we used python library, Optuna. Due to long training durations, the number of hyperparameters was limited to 3. These hyperparameters include learning rate, momentum (in the context of stochastic gradient descent), and batch size. This search included 10 trials, each trial receiving 10 epochs of training, a lower number of epochs than our most performant model. This design decision was driven via training time constraints. 
 
 # Empirical Experiments
 
-Thomas, please fill this out 
+## Loss w.r.t epochs 
+We have investigated the the loss of two models, ResNet18 and GoogleNet with respect to number of epochs trained. Both models showed a steep spike in loss around 4 epochs with significant diminishing returns after 7.
 
 ## Amount of training data
 

@@ -125,7 +125,7 @@ As seen in Table 4, ResNet18 remains the best model at classifying the dataset, 
 
 # Interpretability Experiment
 
-Thomas, please fill this out 
+To better understand the our best performing binary classifier, a ResNet18 based model, a T-SNE plot of different data points with respect to layer activations was created. The layer of interest is the last convolutional layer. These activations were collected for each input and reduced with PCA (n-components=6). Sklearn's TSNE was then run on these vectors with perplexity=20, learning\_rate=5. A 2 component T-SNE plot was generated with tnse.py that marks datapoints with their image representation.
 
 # Bonus Experiments
 

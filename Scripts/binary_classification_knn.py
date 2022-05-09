@@ -87,10 +87,12 @@ def process_dataset(dataset_file_name, total_num_samples, label, storage_gray):
 
         all_grays.append((grey_temp, label))
 
+# Append all the images into a list with a label 0 if healthy, 1 if a tumor exists
 all_grays = list()
 process_dataset('./Brain Tumor Data Set/Brain Tumor/*', 2513, 1, all_grays)
 process_dataset('./Brain Tumor Data Set/Healthy/*', 2087, 0, all_grays)
 
+# With the data in tuple form, split them up into x and y
 gray_x = []
 
 for tup in all_grays:
@@ -101,11 +103,14 @@ gray_y = []
 for tup in all_grays:
 	gray_y.append(tup[1])
 
+#This splitting is done so that gray_x can be reshaped into an acceptable format for the KNN-algorithm
+#https://stackoverflow.com/questions/65671880/valueerror-found-array-with-dim-3-estimator-expected-2-python was used for help
 gray_x = np.array(gray_x)
 gray_y = np.array(gray_y)
 dimX1, dimX2, dimX3 = gray_x.shape
 gray_x = np.reshape(gray_x, (dimX1, dimX2 * dimX3))
 
+#Split the data and get just the first 360 samples of both for sets for training and testing, given the large number of data points
 x_gray_train, x_gray_test, y_gray_train, y_gray_test = train_test_split(gray_x, gray_y, test_size=0.5, random_state=42)
 
 x_gray_train = x_gray_train[0:360]
@@ -113,6 +118,7 @@ y_gray_train = y_gray_train[0:360]
 x_gray_test = x_gray_test[0:360]
 y_gray_test = y_gray_test[0:360]
 
+#Reduce the dimensions and fit the KNeighborsClassifier onto the training data
 from sklearn.decomposition import PCA
 pca = PCA(n_components=128)
 pca.fit(x_gray_train)
@@ -122,6 +128,7 @@ knn_model = KNeighborsClassifier(n_neighbors=4)
 knn_model.fit(x_gray_train, y_gray_train)
 gray_y_pred = knn_model.predict(x_gray_test)
 
+#Once the model is fit and makes predictions on the x_gray_test data, ouput the accuracy metrics
 from sklearn.metrics import accuracy_score
 from sklearn.metrics import classification_report
 from sklearn.metrics import confusion_matrix
